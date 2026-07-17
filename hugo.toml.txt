@@ -1,0 +1,22 @@
+baseURL = "https://fountainofyouthinyou.com/"
+languageCode = "en-us"
+title = "Christopher Estelle"
+theme = "blowfish" # We will link this in GitHub next
+
+[params]
+    phone = "+1 509-XXX-XXXX"
+    email = "fountainofyouthinyou.com"
+    instagram = "https://www.instagram.com/fountainofyouthinyou/"
+    copyright = "Copyright (c) 2026, Fountain of Youth In You; all rights reserved."
+
+[[params.carousel]]
+    title = "Get Custom Training!"
+    description = "Custom Workout Plans & Scientific Nutrition"
+    image = "img/carousel/boulder-strength.jpg"
+    link = "/services"
+
+[[params.carousel]]
+    title = "Follow Me On Instagram"
+    description = "Keep up-to-date on all my latest fitness content."
+    image = "img/carousel/instagram.webp"
+    link = "https://www.instagram.com/fountainofyouthinyou/"
