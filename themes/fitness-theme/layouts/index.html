@@ -1,35 +1,6 @@
-<!DOCTYPE html>
-<html lang="en-us">
-<head>
-	<meta name="generator" content="Hugo 0.164.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fountain of Youth - Fitness &amp; Personal Training</title>
-    <meta name="description" content="Transform your body, transform your life with personalized fitness coaching.">
-    <link rel="stylesheet" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header class="site-header">
-    <nav class="nav">
-        <a href="/" class="nav-logo">FOUNTAIN OF YOUTH</a>
-        <button class="nav-toggle" aria-label="Menu" onclick="toggleMenu()">
-            <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-menu" id="navMenu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#programs">Programs</a></li>
-            <li><a href="#social">Social</a></li>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#contact" class="nav-cta">Get Started</a></li>
-        </ul>
-    </nav>
-</header>
+{{ define "main" }}
 
-    
-
-
+<!-- HERO -->
 <section class="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
@@ -41,14 +12,14 @@
             <a href="#contact" class="btn btn-outline">Work With Me</a>
         </div>
         <div class="hero-stats">
-            <div class="stat"><span class="stat-num" data-target="500">0</span><p>Clients Coached</p></div>
-            <div class="stat"><span class="stat-num" data-target="10">0</span><p>Years Experience</p></div>
-            <div class="stat"><span class="stat-num" data-target="100000">0</span><p>Followers</p></div>
+            <div class="stat"><span class="stat-num" data-target="{{ .Site.Params.clients_count }}">0</span><p>Clients Coached</p></div>
+            <div class="stat"><span class="stat-num" data-target="{{ .Site.Params.years_experience }}">0</span><p>Years Experience</p></div>
+            <div class="stat"><span class="stat-num" data-target="{{ .Site.Params.followers_count }}">0</span><p>Followers</p></div>
         </div>
     </div>
 </section>
 
-
+<!-- ABOUT -->
 <section id="about" class="about">
     <div class="container">
         <div class="about-grid">
@@ -75,7 +46,7 @@
     </div>
 </section>
 
-
+<!-- PROGRAMS -->
 <section id="programs" class="programs">
     <div class="container">
         <p class="section-tag center">PROGRAMS</p>
@@ -122,31 +93,31 @@
     </div>
 </section>
 
-
+<!-- SOCIAL MEDIA -->
 <section id="social" class="social">
     <div class="container">
         <p class="section-tag center">STAY CONNECTED</p>
         <h2 class="section-title center">Follow My Journey</h2>
         <div class="social-grid">
-            <a href="#" target="_blank" class="social-card">
+            <a href="{{ .Site.Params.instagram }}" target="_blank" class="social-card">
                 <div class="social-icon">📸</div>
                 <h3>Instagram</h3>
                 <p>Daily fitness tips, workouts, and motivation</p>
                 <span class="social-followers">Follow @fountainofyouthinyou</span>
             </a>
-            <a href="#" target="_blank" class="social-card">
+            <a href="{{ .Site.Params.youtube }}" target="_blank" class="social-card">
                 <div class="social-icon">▶️</div>
                 <h3>YouTube</h3>
                 <p>Full workout videos and tutorials</p>
                 <span class="social-followers">Subscribe to my channel</span>
             </a>
-            <a href="#" target="_blank" class="social-card">
+            <a href="{{ .Site.Params.tiktok }}" target="_blank" class="social-card">
                 <div class="social-icon">🎵</div>
                 <h3>TikTok</h3>
                 <p>Quick fitness tips and challenges</p>
                 <span class="social-followers">Follow @fountainofyouthinyou</span>
             </a>
-            <a href="#" target="_blank" class="social-card">
+            <a href="{{ .Site.Params.facebook }}" target="_blank" class="social-card">
                 <div class="social-icon">👍</div>
                 <h3>Facebook</h3>
                 <p>Community updates and events</p>
@@ -156,7 +127,7 @@
     </div>
 </section>
 
-
+<!-- SHOP -->
 <section id="shop" class="shop">
     <div class="container">
         <p class="section-tag center">COMING SOON</p>
@@ -190,7 +161,7 @@
     </div>
 </section>
 
-
+<!-- TESTIMONIALS -->
 <section class="testimonials">
     <div class="container">
         <p class="section-tag center">SUCCESS STORIES</p>
@@ -215,7 +186,7 @@
     </div>
 </section>
 
-
+<!-- CONTACT -->
 <section id="contact" class="contact">
     <div class="container">
         <p class="section-tag center">GET IN TOUCH</p>
@@ -225,9 +196,9 @@
                 <h3>Let's Work Together</h3>
                 <p>Ready to transform your body and life? Fill out the form and I'll get back to you within 24 hours.</p>
                 <div class="contact-details">
-                    <p>📧 <a href="mailto:contact@fountainofyouthinyou.com">contact@fountainofyouthinyou.com</a></p>
-                    <p>📞 (555) 123-4567</p>
-                    <p>📍 Your City, State</p>
+                    <p>📧 <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
+                    <p>📞 {{ .Site.Params.phone }}</p>
+                    <p>📍 {{ .Site.Params.location }}</p>
                 </div>
             </div>
             <form class="contact-form" onsubmit="handleSubmit(event)">
@@ -254,46 +225,4 @@
     </div>
 </section>
 
-
-    <footer class="site-footer">
-    <div class="footer-container">
-        <div class="footer-col">
-            <h3>FOUNTAIN OF YOUTH</h3>
-            <p>Transform your body, transform your life. Personalized fitness coaching for every level.</p>
-        </div>
-        <div class="footer-col">
-            <h4>Quick Links</h4>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#programs">Programs</a></li>
-                <li><a href="#social">Social Media</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>Programs</h4>
-            <ul>
-                <li><a href="#programs">1-on-1 Training</a></li>
-                <li><a href="#programs">Online Coaching</a></li>
-                <li><a href="#programs">Group Training</a></li>
-            </ul>
-        </div>
-        <div class="footer-col">
-            <h4>Follow Me</h4>
-            <div class="footer-social">
-                <a href="#" target="_blank">Instagram</a>
-                <a href="#" target="_blank">YouTube</a>
-                <a href="#" target="_blank">TikTok</a>
-                <a href="#" target="_blank">Facebook</a>
-            </div>
-        </div>
-    </div>
-    <div class="footer-bottom">
-        <p>&copy; 2026 Fountain of Youth. All rights reserved.</p>
-    </div>
-</footer>
-
-    <script src="/js/main.js"></script>
-</body>
-</html>
+{{ end }}

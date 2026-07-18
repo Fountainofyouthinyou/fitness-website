@@ -1,34 +1,17 @@
-baseURL = "http://localhost:1313/"
-theme = "blowfish"
-defaultContentLanguage = "en"
-
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
+baseURL = "https://www.fountainofyouthinyou.com/"
+languageCode = "en-us"
+title = "Fountain of Youth - Fitness & Personal Training"
+theme = "fitness-theme"
 
 [params]
-  colorScheme = "blowfish"
-  # This hides the author module completely across the site to prevent template crashes
-  showAuthor = false
-  showAuthorBottom = false
-  
-  [params.homepage]
-    layout = "page"
-
-  [params.header]
-    layout = "basic"
-
-# Menu configuration for the top navigation links
-[[menu.main]]
-  name = "Home"
-  url = "/"
-  weight = 1
-
-[[menu.main]]
-  name = "About"
-  url = "/about/"
-  weight = 2
-
-[[menu.main]]
-  name = "Contact"
-  url = "/contact/"
-  weight = 3
+  description = "Transform your body, transform your life with personalized fitness coaching."
+  instagram = "#"
+  youtube = "#"
+  tiktok = "#"
+  facebook = "#"
+  email = "contact@fountainofyouthinyou.com"
+  phone = "(555) 123-4567"
+  location = "Your City, State"
+  clients_count = 500
+  years_experience = 10
+  followers_count = 100000

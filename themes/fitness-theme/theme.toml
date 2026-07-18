@@ -1,0 +1,8 @@
+name = "Fitness Theme"
+license = "MIT"
+description = "Fitness influencer personal trainer theme"
+tags = ["fitness", "personal-trainer", "landing-page"]
+min_version = "0.41.0"
+
+[author]
+  name = "Fountain of Youth"
