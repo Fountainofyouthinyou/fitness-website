@@ -155,3 +155,10 @@ section { padding: 100px 0; }
     .shop-grid { grid-template-columns: 1fr; }
     .footer-container { grid-template-columns: 1fr; }
 }
+.about-photo {
+    width: 100%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    border-radius: 20px;
+}
+

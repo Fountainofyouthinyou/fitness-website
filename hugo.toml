@@ -1,17 +1,17 @@
 baseURL = "https://www.fountainofyouthinyou.com/"
 languageCode = "en-us"
-title = "Fountain of Youth - Fitness & Personal Training"
+title = "Fountain of Youth In You - Fitness & Personal Training"
 theme = "fitness-theme"
 
 [params]
   description = "Transform your body, transform your life with personalized fitness coaching."
-  instagram = "#"
-  youtube = "#"
-  tiktok = "#"
-  facebook = "#"
+  instagram = "https://www.instagram.com/fountainofyouthinyou/"
+  youtube = "https://youtube.com/@fountainofyouthinyou6786?si=TJpiwn9Isnde-RTt"
+  tiktok = "https://www.tiktok.com/t/ZTSEHpBbj/"
+  facebook = "https://www.facebook.com/share/1Hvw2neMJc/"
   email = "contact@fountainofyouthinyou.com"
-  phone = "(555) 123-4567"
+  phone = "Update"
   location = "Your City, State"
-  clients_count = 500
-  years_experience = 10
-  followers_count = 100000
+  clients_count = 30
+  years_experience = 30
+  followers_count = 150
