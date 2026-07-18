@@ -157,8 +157,12 @@ section { padding: 100px 0; }
 }
 .about-photo {
     width: 100%;
+    max-width: 400px;
     aspect-ratio: 3/4;
     object-fit: cover;
     border-radius: 20px;
+    display: block;
+    margin: 0 auto;
 }
+
 
