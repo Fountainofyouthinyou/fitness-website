@@ -1,0 +1,24 @@
+# Main navigation links (can be left empty if you want a pure landing page)
+# [[main]]
+#   name = "Blog"
+#   url = "/posts/"
+#   weight = 1
+
+# Profile links (These show up under your avatar)
+[[profile]]
+  name = "Instagram"
+  url = "https://www.instagram.com/fountainofyouthinyou/"
+  identifier = "instagram"
+  weight = 1
+
+[[profile]]
+  name = "YouTube"
+  url = "https://youtube.com/@fountainofyouthinyou6786?si=TJpiwn9Isnde-RTt"
+  identifier = "youtube"
+  weight = 2
+
+[[profile]]
+  name = "TikTok"
+  url = "https://www.tiktok.com/t/ZTSEHpBbj/"
+  identifier = "tiktok"
+  weight = 3

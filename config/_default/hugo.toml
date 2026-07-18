@@ -1,0 +1,15 @@
+theme = "blowfish"
+defaultContentLanguage = "en"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[params]
+  [params.homepage]
+    layout = "profile"
+    showRecent = false
+
+  [params.author]
+    name = "Your Name"
+    bio = "Amateur natural bodybuilder & content creator."
+    image = "profile.jpg"

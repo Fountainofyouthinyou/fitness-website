@@ -1,25 +1,34 @@
-baseURL = "https://fountainofyouthinyou.com/"
-languageCode = "en-us"
-title = "Christopher Estelle"
-theme = "blowfish" # We will link this in GitHub next
+baseURL = "http://localhost:1313/"
+theme = "blowfish"
+defaultContentLanguage = "en"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
 
 [params]
-    phone = "+1 509-XXX-XXXX"
-    email = "fountainofyouthinyou.com"
-    instagram = "https://www.instagram.com/fountainofyouthinyou/"
-    copyright = "Copyright (c) 2026, Fountain of Youth In You; all rights reserved."
+  colorScheme = "blowfish"
+  # This hides the author module completely across the site to prevent template crashes
+  showAuthor = false
+  showAuthorBottom = false
+  
+  [params.homepage]
+    layout = "page"
 
-[[params.carousel]]
-    title = "Get Custom Training!"
-    description = "Custom Workout Plans & Scientific Nutrition"
-    image = "img/carousel/boulder-strength.jpg"
-    link = "/services"
+  [params.header]
+    layout = "basic"
 
-[[params.carousel]]
-    title = "Follow Me On Instagram"
-    description = "Keep up-to-date on all my latest fitness content."
-    image = "img/carousel/instagram.webp"
-    link = "https://www.instagram.com/fountainofyouthinyou/"
-[module]
- [[module.imports]]
-  path = "github.com/nunocoracao/blowfish/v2"
+# Menu configuration for the top navigation links
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 2
+
+[[menu.main]]
+  name = "Contact"
+  url = "/contact/"
+  weight = 3
